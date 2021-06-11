@@ -500,30 +500,13 @@
             padding: 0 9px 17px 0;
         }
 
-        .features .info-features__watch {
-            padding-bottom: 12px;
-            font-size: 18px;
-            line-height: 22px;
-            font-weight: bold;
-            color: #ff940d;
-            position: relative;
-        }
-
-        .features .info-features__watch::after {
-            position: absolute;
-            display: block;
-            content: "";
-            width: 86px;
-            height: 40px;
-            right: -20px;
-            top: -20px;
-            background: url("./assets/images/features/arrow.png");
-        }
-
         .features__video {
             position: relative;
             display: flex;
             align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
         }
     </style>
     <script src="./assets/script/lazysizes.min.js" async></script>
@@ -565,14 +548,16 @@
                                 <ul class="menu-language__list">
                                     <li class="menu-language__item">
                                         <a href="#" class="menu-language__link">
-                                            <img data-src="./assets/images/header/russia.png" src="./assets/images/header/russia.png" alt="menu-language__image"
+                                            <img data-src="./assets/images/header/russia.png"
+                                                src="./assets/images/header/russia.png" alt="menu-language__image"
                                                 class="menu-language__image lazyload">
                                             <span class="menu-language__text">RU</span>
                                         </a>
                                     </li>
                                     <li class="menu-language__item">
                                         <a href="#" class="menu-language__link">
-                                            <img data-src="./assets/images/header/ukraine.png" src="./assets/images/header/ukraine.png" alt="menu-language__image"
+                                            <img data-src="./assets/images/header/ukraine.png"
+                                                src="./assets/images/header/ukraine.png" alt="menu-language__image"
                                                 class="menu-language__image lazyload">
                                             <span class="menu-language__text">UK</span>
                                         </a>
@@ -803,8 +788,9 @@
 
                     </div>
                     <div class="features__video">
-                        <div class="yt__image"></div>
-                        <div id="ytplayer" class="lazyload"></div>
+                        <img class="yt__preview lazyload" data-src="./assets/images/features/yt__preview.png"
+                            src="./assets/images/features/yt__preview.png" alt="yt__preview">
+                        <div id="ytplayer" class="ytplayer lazyload"></div>
                         <div class="yt__wrapper" id="yt__play">
                             <div class="yt__circle">
                                 <div class="yt__arrow"></div>
@@ -1189,7 +1175,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/1.png" src="./assets/images/course/1.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/1.png" src="./assets/images/course/1.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">С нуля - Beginner</h3>
                                         <p class="course__text">Легкий старт для пользователей, ранее не изучавших язык.
@@ -1206,7 +1193,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/2.png" src="./assets/images/course/2.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/2.png" src="./assets/images/course/2.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Для начинающих – Elementary</h3>
                                         <p class="course__text">Для пользователей с начальным уровнем знаний.</p>
@@ -1222,7 +1210,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/3.png" src="./assets/images/course/3.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/3.png" src="./assets/images/course/3.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Средний – Pre-intermediate</h3>
                                         <p class="course__text">Для пользователей со средним уровнем знаний английского.
@@ -1239,7 +1228,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/4.png" src="./assets/images/course/4.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/4.png" src="./assets/images/course/4.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Выше среднего – Intermediate</h3>
                                         <p class="course__text">Для пользователей со знаниями - выше среднего.</p>
@@ -1255,7 +1245,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/5.png" src="./assets/images/course/5.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/5.png" src="./assets/images/course/5.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Буквы и звуки. Правила чтения.</h3>
                                         <p class="course__text">Английские буквы - звучание, написание, транскрипция.
@@ -1273,7 +1264,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/6.png" src="./assets/images/course/6.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/6.png" src="./assets/images/course/6.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Буквы и звуки. Правила чтения.</h3>
                                         <p class="course__text">Английские буквы - звучание, написание, транскрипция.
@@ -1291,7 +1283,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/7.png" src="./assets/images/course/7.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/7.png" src="./assets/images/course/7.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Туризм</h3>
                                         <p class="course__text">Основы разговорной лексики для комфортных путешествий.
@@ -1308,7 +1301,8 @@
                         <li class="course__item">
                             <div class="course__wrap">
                                 <div class="course__top">
-                                    <img data-src="./assets/images/course/8.png" src="./assets/images/course/8.png" alt="course__image" class="course__image lazyload">
+                                    <img data-src="./assets/images/course/8.png" src="./assets/images/course/8.png"
+                                        alt="course__image" class="course__image lazyload">
                                     <div class="course__content">
                                         <h3 class="course__subtitle">Сказки</h3>
                                         <p class="course__text">Обучающая аудиокнига со сказками на английском для детей
@@ -1533,8 +1527,8 @@
                     <ul class="feedback__list list-feedback">
                         <li class="list-feedback__item">
                             <div class="list-feedback__top">
-                                <img data-src="./assets/images/feedback/1.png"  src="./assets/images/feedback/1.png" alt="list-feedback__image"
-                                    class="list-feedback__image lazyload">
+                                <img data-src="./assets/images/feedback/1.png" src="./assets/images/feedback/1.png"
+                                    alt="list-feedback__image" class="list-feedback__image lazyload">
                                 <span class="list-feedback__name">Артем</span>
                             </div>
                             <div class="list-feedback__content">
@@ -1548,8 +1542,8 @@
                         </li>
                         <li class="list-feedback__item">
                             <div class="list-feedback__top">
-                                <img data-src="./assets/images/feedback/2.png" src="./assets/images/feedback/2.png" alt="list-feedback__image"
-                                    class="list-feedback__image lazyload">
+                                <img data-src="./assets/images/feedback/2.png" src="./assets/images/feedback/2.png"
+                                    alt="list-feedback__image" class="list-feedback__image lazyload">
                                 <span class="list-feedback__name">Sofi</span>
                             </div>
                             <div class="list-feedback__content">
@@ -1651,7 +1645,11 @@
         }
         // 4. The API will call this function when the video player is ready.
         function onPlayerReady(event) {
-            $('#ytplayer').attr('loading', 'lazy')
+            $(".yt__preview").click(function () {
+                $(this).hide();
+                player.playVideo();
+                $('.ytplayer').addClass('active');
+            });
             player.setVolume(30)
         }
         function onPlayerStateChange() {

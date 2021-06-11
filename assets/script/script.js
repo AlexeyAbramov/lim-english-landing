@@ -2,6 +2,8 @@ $(document).ready(function () {
   $("#yt__play").click(function () {
     // $(this).parent().children()[0].src += "&autoplay=1";
     player.playVideo();
+    $(".yt__preview").hide();
+    $(".ytplayer").addClass("active");
     setTimeout(() => {
       $(this).hide();
     }, 500);
@@ -59,7 +61,7 @@ $(document).ready(function () {
       popup.has(e.target).length === 0
     ) {
       $("html").removeClass("overflow");
-      $('.popup').removeClass("active");
+      $(".popup").removeClass("active");
     }
   });
 });
