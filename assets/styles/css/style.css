@@ -834,7 +834,6 @@ input {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 300px;
   justify-content: center;
 }
 .features .ytplayer {

@@ -4,6 +4,7 @@ $(document).ready(function () {
     player.playVideo();
     $(".yt__preview").hide();
     $(".ytplayer").addClass("active");
+    $(".ytplayer").height($(".yt__preview").height());
     setTimeout(() => {
       $(this).hide();
     }, 500);
