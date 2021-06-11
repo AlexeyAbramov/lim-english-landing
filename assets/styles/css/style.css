@@ -1756,10 +1756,6 @@ input {
     line-height: 13px;
   }
 
-  .features__video iframe {
-    width: 300px;
-  }
-
   .result__title {
     font-size: 25px;
   }
