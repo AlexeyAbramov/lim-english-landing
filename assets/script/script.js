@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#yt__play").click(function () {
-    $(this).parent().children()[0].src += "&autoplay=1";
+    // $(this).parent().children()[0].src += "&autoplay=1";
+    player.playVideo();
     setTimeout(() => {
       $(this).hide();
     }, 500);
