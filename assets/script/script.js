@@ -65,7 +65,7 @@ $(document).ready(function () {
       .css("display", "block")
       .delay(600)
       .animate({ top: "40%", opacity: 1 }, 400);
-    $("html").addClass("overflow");
+    // $("html").addClass("overflow");
   });
   $(document).mouseup(function (e) {
     // событие клика по веб-документу
@@ -74,7 +74,7 @@ $(document).ready(function () {
       popup.is(e.target) && // если клик был не по нашему блоку
       popup.has(e.target).length === 0
     ) {
-      $("html").removeClass("overflow");
+      // $("html").removeClass("overflow");
       setTimeout(() => {
         $(".popup").removeClass("active");
       }, 1200);
