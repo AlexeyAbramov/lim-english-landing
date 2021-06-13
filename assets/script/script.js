@@ -1,14 +1,21 @@
 $(document).ready(function () {
   $("#yt__play").click(function () {
     // $(this).parent().children()[0].src += "&autoplay=1";
-    player.playVideo();
+    $(".ytplayer").append(
+      $(
+        '<iframe class="lazyload" src="https://www.youtube.com/embed/nxGWjdBuBbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>'
+      )
+    );
+    $("iframe").height($(".yt__preview").height());
+    $("iframe").width($(".yt__preview").width());
     $(".yt__preview").hide();
     $(".ytplayer").addClass("active");
-    $(".ytplayer").height($(".yt__preview").height());
     setTimeout(() => {
       $(this).hide();
     }, 500);
   });
+  //MODAL
+
   //tabs
   $("ul.tabs-process__list").on("click", "li:not(.active)", function () {
     $(this)
@@ -31,6 +38,7 @@ $(document).ready(function () {
     infinity: true,
     slidesToShow: 2,
     slidesToScroll: 1,
+    swipe:false,
     prevArrow: '<button type="button" class="list-feedback__prev"></button>',
     nextArrow: '<button type="button" class="list-feedback__next"></button>',
     responsive: [
@@ -52,17 +60,26 @@ $(document).ready(function () {
   $(".right-header__registration, .result__button").click(function (e) {
     e.preventDefault();
     $(".popup").addClass("active");
+    $(".popup__overlay").css("display", "block").animate({ opacity: 0.5 }, 400);
+    $(".popup__body")
+      .css("display", "block")
+      .delay(600)
+      .animate({ top: "40%", opacity: 1 }, 400);
     $("html").addClass("overflow");
   });
   $(document).mouseup(function (e) {
     // событие клика по веб-документу
-    var popup = $(".popup.active"); // тут указываем ID элемента
+    var popup = $(".popup__overlay"); // тут указываем ID элемента
     if (
       popup.is(e.target) && // если клик был не по нашему блоку
       popup.has(e.target).length === 0
     ) {
       $("html").removeClass("overflow");
-      $(".popup").removeClass("active");
+      setTimeout(() => {
+        $(".popup").removeClass("active");
+      }, 1200);
+      $(".popup__overlay").delay(400).animate({ opacity: 0 }, 800);
+      $(".popup__body").delay(200).animate({ top: "20%", opacity: 0 }, 400);
     }
   });
 });

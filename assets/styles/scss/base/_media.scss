@@ -162,7 +162,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   //HEADER
   .header {
     .nav-header {
@@ -187,6 +187,30 @@
             }
           }
         }
+      }
+    }
+  }
+  .menu-wrapper {
+    display: block;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 900px) {
+  //FEATURES
+  .features {
+    .info-features {
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__list {
+        grid-template-columns: 1fr 1fr;
+      }
+      &__about {
+        text-align: center;
+      }
+      &__watch {
+        bottom: -35px;
       }
     }
   }
@@ -443,6 +467,7 @@
 @media screen and (max-width: 440px) {
   //HEADER
   .header {
+    order: 1;
     .left-start {
       .total {
         padding-right: 0;
@@ -460,36 +485,27 @@
       }
     }
   }
-  //RESULT
-  .result {
+  //FEATURES
+  .features {
+    order: 1;
+  }
+  //WHAT
+  .what {
+    order: 2;
     &__title {
       font-size: 25px;
     }
-  }
-  //ONLINE
-  .online {
-    &__right {
-      margin-left: 0;
+    &__wrapper::before {
+      top: 36px;
     }
-    &__title {
-      text-align: center;
-      font-size: 22px;
-      line-height: 26px;
-    }
-  }
-  //COURSE
-  .course {
-    &__title {
-      font-size: 22px;
-      line-height: 26px;
-    }
-    &__subtitle {
-      font-size: 14px;
-      line-height: 17px;
+    &__tagline {
+      font-size: 17px;
+      line-height: 21px;
     }
   }
   //PROCESS
   .process {
+    order: 4;
     .tabs-process {
       .left-tabs {
         &__list {
@@ -502,14 +518,43 @@
       }
     }
   }
-  //WHAT
-  .what {
-    &__wrapper::before {
-      top: 36px;
+  //RESULT
+  .result {
+    order: 3;
+    &__title {
+      font-size: 25px;
     }
-    &__tagline {
-      font-size: 17px;
-      line-height: 21px;
+  }
+  //ONLINE
+  .online {
+    order: 5;
+    &__right {
+      margin-left: 0;
     }
+    &__title {
+      text-align: center;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  //COURSE
+  .course {
+    order: 6;
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  //QUESTIONS
+  .questions {
+    order: 7;
+  }
+  //FEEDBACK
+  .feedback {
+    order: 8;
   }
 }

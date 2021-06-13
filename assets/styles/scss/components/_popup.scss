@@ -1,19 +1,29 @@
 .popup {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: $popup--background;
   z-index: 100;
   top: 0;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   display: none;
-  padding: 0 10px;
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    display: none;
+    opacity: 0;
+  }
   &__body {
+    margin-top: -210px;
     max-width: 375px;
     width: 100%;
     padding: 37px 23px 31px 23px;
     border-radius: 7px;
     box-shadow: $popup--boxshadow;
     background-color: $white;
+    position: absolute;
+    display: none;
+    opacity: 0;
   }
   &__heading {
     text-align: center;
@@ -78,7 +88,7 @@
       color: $turquoise--20;
     }
   }
-}
-.popup.active {
-  @include dfcenter;
+  &.active{
+    display: flex;
+  }
 }
