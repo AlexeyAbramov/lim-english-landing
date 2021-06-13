@@ -3,7 +3,7 @@ $(document).ready(function () {
     // $(this).parent().children()[0].src += "&autoplay=1";
     $(".ytplayer").append(
       $(
-        '<iframe class="lazyload" src="https://www.youtube.com/embed/nxGWjdBuBbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>'
+        '<iframe class="lazyload" src="https://www.youtube.com/embed/nxGWjdBuBbQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>'
       )
     );
     $("iframe").height($(".yt__preview").height());
@@ -38,7 +38,7 @@ $(document).ready(function () {
     infinity: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    swipe:false,
+    swipe: false,
     prevArrow: '<button type="button" class="list-feedback__prev"></button>',
     nextArrow: '<button type="button" class="list-feedback__next"></button>',
     responsive: [
