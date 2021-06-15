@@ -1443,9 +1443,6 @@ input {
   .header .right-start {
     flex: 0 0 320px;
   }
-  .header .right-start .social__title {
-    font-size: 18px;
-  }
   .header .right-start .social__list {
     width: 170px;
   }
@@ -1637,6 +1634,9 @@ input {
   }
   .header .right-start .social__list {
     margin-top: 15px;
+  }
+  .header .right-start .social__title {
+    font-size: 18px;
   }
 
   .features__inner {

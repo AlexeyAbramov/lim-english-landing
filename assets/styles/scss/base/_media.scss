@@ -47,9 +47,6 @@
     .right-start {
       flex: 0 0 320px;
       .social {
-        &__title {
-          font-size: 18px;
-        }
         &__list {
           width: 170px;
         }
@@ -284,6 +281,9 @@
       .social {
         &__list {
           margin-top: 15px;
+        }
+        &__title{
+          font-size: 18px;
         }
       }
     }
