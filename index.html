@@ -638,10 +638,6 @@
                 font-size: 16px;
             }
 
-            .course__item {
-                pointer-events: none;
-            }
-
             .feedback__body {
                 max-width: 600px;
             }
@@ -1203,6 +1199,7 @@
         <div class="popup" id="popup">
             <div class="popup__overlay"></div>
             <div class="popup__body">
+                <span class="popup__cross">×</span>
                 <div class="popup__heading">
                     <h4 class="popup__title">Создайте учетную запись</h4>
                 </div>
@@ -1688,8 +1685,7 @@
                     <div class="course__body">
                         <ul class="course__list">
                             <li class="course__item">
-                                <a href="kwork.ru" target="_blank" class="course__itemlink">
-                                    <div class="course__wrap">
+                                    <a class="course__wrap" href="https://kwork.ru" target="_blank">
                                         <div class="course__top">
                                             <img data-src="./assets/images/course/1.png"
                                                 src="./assets/images/course/1.png" alt="course__image"
@@ -1707,8 +1703,7 @@
                                             <img class="course__arrow" src="./assets/images/course/arrow.png"
                                                 alt="course__arrow">
                                         </a>
-                                    </div>
-                                </a>
+                                    </a>
                             </li>
                             <li class="course__item">
                                 <a href="#" class="course__itemlink">

@@ -25,6 +25,14 @@
     display: none;
     opacity: 0;
   }
+  &__cross {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   &__heading {
     text-align: center;
     font-size: 21px;
@@ -88,7 +96,7 @@
       color: $turquoise--20;
     }
   }
-  &.active{
+  &.active {
     display: flex;
   }
 }

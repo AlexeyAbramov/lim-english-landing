@@ -46,6 +46,31 @@
     }
     .right-start {
       flex: 0 0 320px;
+      .social {
+        &__title {
+          font-size: 18px;
+        }
+        &__list {
+          width: 170px;
+        }
+        &__image {
+          width: 45px;
+        }
+      }
+    }
+    .popup {
+      .socials-popup {
+        &__list {
+          width: 170px;
+          max-width: none;
+        }
+        &__text {
+          font-size: 18px;
+        }
+        &__image {
+          width: 45px;
+        }
+      }
     }
   }
   //FEATURES
@@ -165,6 +190,9 @@
 @media screen and (max-width: 900px) {
   //HEADER
   .header {
+    &__start {
+      margin-top: 30px;
+    }
     .nav-header {
       display: none;
     }
@@ -192,6 +220,17 @@
   }
   .menu-wrapper {
     display: block;
+  }
+  //COURSE
+  .course {
+    &__item {
+      pointer-events: auto;
+    }
+    &__item:hover {
+      .course__link {
+        display: none;
+      }
+    }
   }
 }
 @media screen and (min-width: 760px) and (max-width: 900px) {

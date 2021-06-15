@@ -71,8 +71,9 @@ $(document).ready(function () {
     // событие клика по веб-документу
     var popup = $(".popup__overlay"); // тут указываем ID элемента
     if (
-      popup.is(e.target) && // если клик был не по нашему блоку
-      popup.has(e.target).length === 0
+      $(".popup__cross").is(e.target) ||
+      (popup.is(e.target) && // если клик был не по нашему блоку
+        popup.has(e.target).length === 0)
     ) {
       // $("html").removeClass("overflow");
       setTimeout(() => {

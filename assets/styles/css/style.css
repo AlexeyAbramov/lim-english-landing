@@ -467,6 +467,14 @@ input {
   display: none;
   opacity: 0;
 }
+.popup__cross {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .popup__heading {
   text-align: center;
   font-size: 21px;
@@ -1435,6 +1443,25 @@ input {
   .header .right-start {
     flex: 0 0 320px;
   }
+  .header .right-start .social__title {
+    font-size: 18px;
+  }
+  .header .right-start .social__list {
+    width: 170px;
+  }
+  .header .right-start .social__image {
+    width: 45px;
+  }
+  .header .popup .socials-popup__list {
+    width: 170px;
+    max-width: none;
+  }
+  .header .popup .socials-popup__text {
+    font-size: 18px;
+  }
+  .header .popup .socials-popup__image {
+    width: 45px;
+  }
 
   .features__body {
     flex-direction: column;
@@ -1530,6 +1557,9 @@ input {
   }
 }
 @media screen and (max-width: 900px) {
+  .header__start {
+    margin-top: 30px;
+  }
   .header .nav-header {
     display: none;
   }
@@ -1553,6 +1583,13 @@ input {
 
   .menu-wrapper {
     display: block;
+  }
+
+  .course__item {
+    pointer-events: auto;
+  }
+  .course__item:hover .course__link {
+    display: none;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 900px) {
