@@ -1449,18 +1449,12 @@ input {
   .header .right-start .social__list {
     width: 170px;
   }
-  .header .right-start .social__image {
-    width: 45px;
-  }
   .header .popup .socials-popup__list {
     width: 170px;
     max-width: none;
   }
   .header .popup .socials-popup__text {
     font-size: 18px;
-  }
-  .header .popup .socials-popup__image {
-    width: 45px;
   }
 
   .features__body {
