@@ -14,8 +14,6 @@ $(document).ready(function () {
       $(this).hide();
     }, 500);
   });
-  //MODAL
-
   //tabs
   $("ul.tabs-process__list").on("click", "li:not(.active)", function () {
     $(this)
@@ -50,6 +48,7 @@ $(document).ready(function () {
       },
     ],
   });
+  //popup
   $("#header-menu").click(function () {
     $(this).toggleClass("open");
     $("#drop-menu").toggleClass("open");
@@ -82,5 +81,10 @@ $(document).ready(function () {
       $(".popup__overlay").delay(400).animate({ opacity: 0 }, 800);
       $(".popup__body").delay(200).animate({ top: "20%", opacity: 0 }, 400);
     }
+  });
+  //course
+  $(".course .course__link").click(function () {
+    let link = $(this).attr("href");
+    $(this).attr("target") ? window.open(link) : (window.location.href = link);
   });
 });
