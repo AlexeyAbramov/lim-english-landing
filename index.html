@@ -284,11 +284,13 @@
             display: flex;
             justify-content: space-between;
         }
+
         @media screen and (max-width: 900px) {
-            .header__start{
+            .header__start {
                 margin-top: 30px;
             }
         }
+
         .header__start .left-start {
             color: #36467e;
             max-width: 666px;
@@ -422,6 +424,12 @@
             align-items: center;
             justify-content: space-between;
             width: 139px;
+        }
+
+        @media screen and (max-width:900px) {
+            .header__start .right-start .social__list {
+                width: 170px;
+            }
         }
 
         .features__inner {
@@ -1689,25 +1697,24 @@
                     <div class="course__body">
                         <ul class="course__list">
                             <li class="course__item">
-                                    <a class="course__wrap" href="https://kwork.ru" target="_blank">
-                                        <div class="course__top">
-                                            <img data-src="./assets/images/course/1.png"
-                                                src="./assets/images/course/1.png" alt="course__image"
-                                                class="course__image lazyload">
-                                            <div class="course__content">
-                                                <h3 class="course__subtitle">С нуля - Beginner</h3>
-                                                <p class="course__text">Легкий старт для пользователей, ранее не
-                                                    изучавших
-                                                    язык.
-                                                </p>
-                                            </div>
+                                <a class="course__wrap" href="https://kwork.ru" target="_blank">
+                                    <div class="course__top">
+                                        <img data-src="./assets/images/course/1.png" src="./assets/images/course/1.png"
+                                            alt="course__image" class="course__image lazyload">
+                                        <div class="course__content">
+                                            <h3 class="course__subtitle">С нуля - Beginner</h3>
+                                            <p class="course__text">Легкий старт для пользователей, ранее не
+                                                изучавших
+                                                язык.
+                                            </p>
                                         </div>
-                                        <a href="#" class="course__link">
-                                            <span class="course__watch">Смотреть курс</span>
-                                            <img class="course__arrow" src="./assets/images/course/arrow.png"
-                                                alt="course__arrow">
-                                        </a>
+                                    </div>
+                                    <a href="#" class="course__link">
+                                        <span class="course__watch">Смотреть курс</span>
+                                        <img class="course__arrow" src="./assets/images/course/arrow.png"
+                                            alt="course__arrow">
                                     </a>
+                                </a>
                             </li>
                             <li class="course__item">
                                 <a href="#" class="course__itemlink">
